@@ -22,4 +22,4 @@
   - name: create route53 record
     debug:
       msg: "Instances {{ item.item }} with private IP {{ item.instance[0].private_ip_address }}"
-    loop: "{{ ec2_output.result }}"
+    loop: "{{ ec2_output.results }}"
